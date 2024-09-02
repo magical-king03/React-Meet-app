@@ -4,22 +4,6 @@ function MeetingCard(props) {
     let searchQuery = props.img
     let imageURL = `https://source.unsplash.com/1600x800/?${searchQuery}`
     console.log(searchQuery, imageURL)
-    
-
-    let [meetings, setMeetings] = useState([])
-
-    fetch('https://venom-meetings-default-rtdb.firebaseio.com/meet.json').then(
-        response => response.json()).then(data => {
-            let tempMeeting = []
-            for (const key in data) {
-                let meeting = {
-                    id: key,
-                    ...data[key],
-                }
-                tempMeeting.push(meeting)
-            }
-            setMeetings(tempMeeting)
-        })
 
 
     return (

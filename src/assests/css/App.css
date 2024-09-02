@@ -121,9 +121,7 @@ input {
 
 .loader {
   border: 2px solid #ffffff;
-  /* Light grey */
   border-top: 2px solid #807d7d;
-  /* Blue */
   border-radius: 50%;
   width: 20px;
   height: 20px;
